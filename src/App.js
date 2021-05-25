@@ -1,11 +1,13 @@
 import './App.css'
 import diamond from '../src/images/diamond.png'
-import React from 'react'
-import {Modal, Card, Navbar} from "react-bootstrap"
+import React, { useState } from 'react'
+import { Modal, Card, Form, Row, Col, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 
+
+
 function App() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const showModal = () => {
     setIsOpen(true);
@@ -14,11 +16,14 @@ function App() {
   const hideModal = () => {
     setIsOpen(false);
   }
+
+
   return (
     <div className="App">
       <nav>
         <div class="nav-wrapper header">
           <img
+            class="image-logo"
             src={diamond}
             width="50"
             height="50"
@@ -49,33 +54,48 @@ function App() {
           <Modal.Header>
             <Modal.Title>Coin Name</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            <textarea
-              className="modal-text-area"
-              rows="6"
-              cols="91"
-              placeholder="Date">
-            </textarea>
-          </Modal.Body>
-          <Modal.Body>
-            <textarea
-              className="modal-text-area"
-              rows="6"
-              cols="91"
-              placeholder="Quantity">
-            </textarea>
-            </Modal.Body>
-          <Modal.Body>
-            <textarea
-              className="modal-text-area"
-              rows="6"
-              cols="91"
-              placeholder="Price">
-            </textarea>
-            </Modal.Body>
+          <Form>
+            <Row>
+              <Col>
+                <Form.Control placeholder="Date" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Quantity" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Price" />
+              </Col>
+            </Row>
+          </Form>
+          <Form>
+            <Row>
+              <Col>
+                <Form.Control placeholder="Date" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Quantity" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Price" />
+              </Col>
+            </Row>
+          </Form>
+          <Form>
+            <Row>
+              <Col>
+                <Form.Control placeholder="Date" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Quantity" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="Price" />
+              </Col>
+            </Row>
+          </Form>
           <Modal.Footer>
-            <button onClick={hideModal}>Cancel</button>
-            <button className="save-button">Save</button>
+            <Button onClick={hideModal}>Cancel</Button>
+            <Button className="save-button">Save</Button>
           </Modal.Footer>
         </Modal>
       </header>
@@ -83,8 +103,7 @@ function App() {
         <p>&copy; Created by Kevin Choi @Boca Code</p>
       </footer>
     </div>
-
-  );
+  )
 }
 
 
