@@ -1,7 +1,8 @@
-import './App.css';
+import './App.css'
+import diamond from '../src/images/diamond.png'
 import React from 'react'
-import {Modal, Card} from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css";
+import {Modal, Card, Navbar} from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -17,6 +18,11 @@ function App() {
     <div className="App">
       <nav>
         <div class="nav-wrapper header">
+          <img
+            src={diamond}
+            width="50"
+            height="50"
+          />
           <a href="#" class="brand-logo">HODLGOOD</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="collapsible.html">Login</a></li>
