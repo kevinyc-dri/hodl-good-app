@@ -1,6 +1,7 @@
 import './App.css'
 import diamond from '../src/images/diamond.png'
 import ParentModal from './components/ParentModal'
+import Footer from './components/Footer'
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -26,9 +27,7 @@ function App() {
       <header className="App-header">
         <ParentModal />
       </header>
-      <footer className="footer">
-        <p>&copy; Created by Kevin Choi @Boca Code</p>
-      </footer>
+        <Footer />
     </div>
   )
 }

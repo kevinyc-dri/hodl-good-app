@@ -54,40 +54,6 @@ function ChildRow({ addRow }) {
           {/* <button onClick={e => (addRow(row), e.preventDefault())}>+</button> */}
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Form.Control onChange={(e) => setNewDate(e.target.value)} type="date" placeholder="Date" />
-        </Col>
-        <Col>
-          <Form.Control onChange={(e) => setNewQuantity(e.target.value)} placeholder="Total" />
-        </Col>
-        <Col>
-          <Form.Control onChange={(e) => setNewPrice(e.target.value)} placeholder="Price" />
-        </Col>
-        <Col>
-          <p>{calc}</p>
-        </Col>
-        <Col>
-          {/* <button onClick={e => (addRow(row), e.preventDefault())}>+</button> */}
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Form.Control onChange={(e) => setNewDate(e.target.value)} type="date" placeholder="Date" />
-        </Col>
-        <Col>
-          <Form.Control onChange={(e) => setNewQuantity(e.target.value)} placeholder="Total" />
-        </Col>
-        <Col>
-          <Form.Control onChange={(e) => setNewPrice(e.target.value)} placeholder="Price" />
-        </Col>
-        <Col>
-          <p>{calc}</p>
-        </Col>
-        <Col>
-          {/* <button onClick={e => (addRow(row), e.preventDefault())}>+</button> */}
-        </Col>
-      </Row>
     </>
   )
 }
