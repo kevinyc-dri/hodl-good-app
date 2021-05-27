@@ -1,36 +1,32 @@
-import './App.css'
-import diamond from '../src/images/diamond.png'
-import ParentModal from './components/ParentModal'
-import Footer from './components/Footer'
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Layout } from 'antd'
+import NavBar from '../src/components/common/NavBar'
+import './App.css'
+const { Content, Footer } = Layout
 
 function App() {
   return (
-    <div className="App">
-      <nav>
-        <div class="nav-wrapper header">
-          <img
-            class="image-logo"
-            alt="diamond-logo"
-            src={diamond}
-            width="50"
-            height="50"
-          />
-          <a href="#" class="brand-logo">HODLGOOD</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="collapsible.html">Login</a></li>
-          </ul>
-          <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#fcb900" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="20" ></div>
-        </div>
-      </nav>
-      <header className="App-header">
-        <ParentModal />
-      </header>
+    <Router>
+      <Layout className="layout">
+        <NavBar />
+
+        <Content style={{ padding: '0 50px' }}>
+          <div className="site-layout-content">
+            <Switch>
+              <Route path="/login" />
+              <Route path="/signup" />
+              <Route path="/" />
+            </Switch>
+          </div>
+        </Content>
+        {/* <div className="App-header">
+          <ParentModal />
+        </div> */}
         <Footer />
-    </div>
+      </Layout>
+    </Router>
   )
 }
-
 
 export default App

@@ -1,7 +1,5 @@
-@import 'materialize-css';
-
-.App-header {
-	background-color: #000;
+#components-layout-demo-top .logo {
+  background-color: #000;
 	color: white;
 	min-height: 100vh;
 	display: flex;
@@ -11,28 +9,22 @@
 	font-size: calc(10px + 2vmin);
 }
 
-.App-header > .card {
-	background-color: #000 !important;
+/* .App-header {
+	background-color: #000;
 	color: white;
-  border-radius: 12px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	padding: 10px 0 24px 0;
-	border: 1px solid;
-	box-shadow: 10px 5px 5px #6d1919;
-}
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+} */
 
-.header {
-	background-color: #000;
-}
-
-.brand-logo {
-	padding: 10px !important;
-	background-color: #000;
-}
-
-.modal {
-	background-color: #000 !important;
-	opacity: 0.8;
+body {
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {

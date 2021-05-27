@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Modal, Card, Form, Button } from 'react-bootstrap'
 import ChildRow from './ChildRow'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 function ParentModal() {
   const [allRows, setAllRows] = useState([])
