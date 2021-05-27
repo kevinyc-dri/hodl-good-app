@@ -1,3 +1,10 @@
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  max-width: 600px;
+  margin: auto;
+}
+
 #components-layout-demo-top .logo {
   background-color: #000;
 	color: white;
@@ -9,6 +16,19 @@
 	font-size: calc(10px + 2vmin);
 }
 
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+body {
+	background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* .App-header {
 	background-color: #000;
 	color: white;
@@ -19,23 +39,3 @@
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 } */
-
-body {
-  background-color: #000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.footer {
-  color: white;
-	font-size: 16px;
-	margin-top: 0.5rem;
-	padding: 0.5rem;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	opacity: 0.7;
-}

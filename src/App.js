@@ -1,16 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Layout } from 'antd'
-import NavBar from '../src/components/common/NavBar'
+import NavBar from './components/common/NavBar'
 import './App.css'
-const { Content, Footer } = Layout
+const { Content, Footer} = Layout
 
 function App() {
   return (
     <Router>
       <Layout className="layout">
         <NavBar />
-
         <Content style={{ padding: '0 50px' }}>
           <div className="site-layout-content">
             <Switch>
@@ -20,10 +19,9 @@ function App() {
             </Switch>
           </div>
         </Content>
-        {/* <div className="App-header">
-          <ParentModal />
-        </div> */}
-        <Footer />
+        <Footer style={{ textAlign: 'center', color: 'white'}}>
+          &copy; Created by Kevin Choi @Boca Code
+        </Footer>
       </Layout>
     </Router>
   )
