@@ -6,7 +6,6 @@
 }
 
 #components-layout-demo-top .logo {
-  background-color: #000;
 	color: white;
 	min-height: 100vh;
 	display: flex;
@@ -22,7 +21,6 @@
 }
 
 body {
-	background-color: #000;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,3 +37,7 @@ body {
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 } */
+
+.footer {
+	color: white !important;
+}
